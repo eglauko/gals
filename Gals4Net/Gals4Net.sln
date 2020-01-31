@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29721.120
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gals4Net.Core", "Gals4Net.Core\Gals4Net.Core.csproj", "{285DCDA6-3CC1-413F-AF4D-534E36A78416}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{285DCDA6-3CC1-413F-AF4D-534E36A78416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285DCDA6-3CC1-413F-AF4D-534E36A78416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285DCDA6-3CC1-413F-AF4D-534E36A78416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285DCDA6-3CC1-413F-AF4D-534E36A78416}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37335A78-75E7-4A12-B58E-8357C8E1231E}
+	EndGlobalSection
+EndGlobal

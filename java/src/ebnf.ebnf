@@ -1,4 +1,4 @@
-<G> ::= <P>+ ;
+﻿<G> ::= <P>+ ;
 <P> ::= NT #1 "::=" <PLIST> ";" #9 ;
 <PLIST> ::= #5 <RHS> ( "|" #5 <RHS> )* ;
 <RHS> ::= <ITEM>+ | EPSILON ;

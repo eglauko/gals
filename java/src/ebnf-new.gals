@@ -1,4 +1,4 @@
-#Options
+﻿#Options
 GenerateScanner = true
 GenerateParser = true
 Language = Java

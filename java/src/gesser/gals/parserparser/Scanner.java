@@ -1,4 +1,4 @@
-package gesser.gals.parserparser;
+﻿package gesser.gals.parserparser;
 
 import gesser.gals.analyser.*;
 import gesser.gals.simulator.BasicScanner;
@@ -82,7 +82,7 @@ public class Scanner implements BasicScanner
 					{
 						return analyseTerminal(c);
 					}
-					throw new LexicalError("Caracter Inv�lido: '"+c+"'", start);
+					throw new LexicalError("Caracter Inválido: '"+c+"'", start);
 			}						
 		}
 		return null;
@@ -92,14 +92,14 @@ public class Scanner implements BasicScanner
 	{
 		int start = pos-1;
 		if ( ! hasMoreChars() )
-			throw new LexicalError("Caracter Inv�lido: '/'", start);
+			throw new LexicalError("Caracter Inválido: '/'", start);
 			
 		char c = nextChar();
 		
 		if (c != '/')
 		{
 			pushChar();
-			throw new LexicalError("Caracter Inv�lido: '/'", start);	
+			throw new LexicalError("Caracter Inválido: '/'", start);	
 		}
 		
 		StringBuffer result = new StringBuffer("//");
@@ -131,7 +131,7 @@ public class Scanner implements BasicScanner
 					return new Token(DERIVES, "::=", start);
 			}
 		}
-		throw new LexicalError("S�mbolo Inv�lido", start);
+		throw new LexicalError("Símbolo Inválido", start);
 	}
 	
 	public int getPosition()
@@ -185,10 +185,10 @@ public class Scanner implements BasicScanner
 						close = true;
 				}
 				else if (c == '\n')
-					throw new LexicalError("Terminal inv�lido", start);
+					throw new LexicalError("Terminal inválido", start);
 			}
 			if (bfr.length() == 0 || !close)
-				throw new LexicalError("Terminal inv�lido", start);
+				throw new LexicalError("Terminal inválido", start);
 		}
 		else
 		{			
@@ -217,11 +217,11 @@ public class Scanner implements BasicScanner
 			if (c == '>')
 				break;
 			else if (!Character.isLetterOrDigit(c) && c != '_')
-				throw new LexicalError("N�o-Terminal inv�lido", start);
+				throw new LexicalError("Não-Terminal inválido", start);
 			bfr.append(c);
 		}		
 		if (bfr.length() == 0 || c != '>')
-			throw new LexicalError("N�o-Terminal inv�lido", start);
+			throw new LexicalError("Não-Terminal inválido", start);
 		else 
 			return new Token(NON_TERM, "<"+bfr+">", start);
 	}
@@ -244,7 +244,7 @@ public class Scanner implements BasicScanner
 		}
 		
 		if (bfr.length() == 0)
-			throw new LexicalError("A��o Sem�ntica inv�lida", start);
+			throw new LexicalError("Ação Semântica inválida", start);
 		else
 			return new Token(ACTION, bfr.toString(), start);
 	}

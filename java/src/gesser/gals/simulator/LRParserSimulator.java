@@ -1,4 +1,4 @@
-package gesser.gals.simulator;
+﻿package gesser.gals.simulator;
 
 import java.util.List;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package gesser.gals.generator;
+ï»¿package gesser.gals.generator;
 
 import gesser.gals.Actions;
 import gesser.gals.GALS;
@@ -29,7 +29,7 @@ public class OptionsDialog extends JDialog implements ActionListener
 	
 	private OptionsDialog()
 	{
-		super(MainWindow.getInstance(), "Opções do Projeto", true);	
+		super(MainWindow.getInstance(), "OpÃ§Ãµes do Projeto", true);	
 		getContentPane().add(optionsPane);
 		
 		JPanel btns = new JPanel(new GridLayout(1, 0, 5, 5));

@@ -1,4 +1,4 @@
-package gesser.gals.generator.parser;
+ï»¿package gesser.gals.generator.parser;
 
 import java.util.List;
 
@@ -56,9 +56,9 @@ public class ConflictSolver extends Box implements LLConflictSolver, LRConflictS
         else
             in = g.getTerminals()[input-1];
 
-        label1.setText("- O símbolo no topo da pilha é: "+g.getNonTerminals()[stackTop]);
-        label2.setText("- O símbolo da entrada é: "+in);
-        label3.setText("Qual produção deve ser utilizada?");
+        label1.setText("- O sÃ­mbolo no topo da pilha Ã©: "+g.getNonTerminals()[stackTop]);
+        label2.setText("- O sÃ­mbolo da entrada Ã©: "+in);
+        label3.setText("Qual produÃ§Ã£o deve ser utilizada?");
                 
         List<Production> pl = g.getProductions();
                 
@@ -83,9 +83,9 @@ public class ConflictSolver extends Box implements LLConflictSolver, LRConflictS
         else
             in = g.getTerminals()[input-1];
 
-        label1.setText("- O estado no topo da pilha é: "+state);
-        label2.setText("- O símbolo da entrada é: "+in);
-        label3.setText("Qual ação a ser executada:");
+        label1.setText("- O estado no topo da pilha Ã©: "+state);
+        label2.setText("- O sÃ­mbolo da entrada Ã©: "+in);
+        label3.setText("Qual aÃ§Ã£o a ser executada:");
         
         conflictListModel.removeAllElements();
         for (int i=0; i<conflict.length; i++)
@@ -94,10 +94,10 @@ public class ConflictSolver extends Box implements LLConflictSolver, LRConflictS
             switch (conflict[i].getType())
             {
                 case REDUCE:
-                    label = "Reduzir, pela produção "+conflict[i].getParameter();
+                    label = "Reduzir, pela produÃ§Ã£o "+conflict[i].getParameter();
                     break;
                 case ACTION:
-                    label = "Executar ação semântica "+conflict[i].getParameter();
+                    label = "Executar aÃ§Ã£o semÃ¢ntica "+conflict[i].getParameter();
                     break;
                 case SHIFT:
                     label = "Empilhar \""+in+"\"";

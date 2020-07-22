@@ -1,4 +1,4 @@
-package gesser.gals.generator.cpp;
+ï»¿package gesser.gals.generator.cpp;
 
 import gesser.gals.generator.Options;
 import gesser.gals.generator.RecursiveDescendent;
@@ -95,7 +95,7 @@ public class CppParserGenerator
 			openNamespace(options)+
 			"void "+classname+"::executeAction(int action, const Token *token) throw (SemanticError )\n"+
 			"{\n"+
-			"    std::cout << \"Ação: \" << action << \", Token: \"  << token->getId() \n"+
+			"    std::cout << \"AÃ§Ã£o: \" << action << \", Token: \"  << token->getId() \n"+
 			"              << \", Lexema: \" << token->getLexeme() << std::endl;\n"+
 			"}\n"+
 			"\n"+
@@ -417,7 +417,7 @@ public class CppParserGenerator
 			"    if (p >= 0)\n"+
 			"    {\n"+
 			"        int *production = PRODUCTIONS[p];\n"+
-			"        //empilha a produção em ordem reversa\n"+
+			"        //empilha a produÃ§Ã£o em ordem reversa\n"+
 			"        int length = production[0];\n"+
 			"        for (int i=length; i>=1; i--)\n"+
 			"        {\n"+

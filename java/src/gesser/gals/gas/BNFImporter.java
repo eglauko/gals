@@ -1,4 +1,4 @@
-package gesser.gals.gas;
+ï»¿package gesser.gals.gas;
 
 import gesser.gals.Actions;
 import gesser.gals.FileFilters;
@@ -32,20 +32,20 @@ import javax.swing.SwingConstants;
 
 public class BNFImporter extends JDialog implements ActionListener
 {
-	private JButton prods = new JButton("Importar Produções para Projeto Atual");
-	private JButton synt = new JButton("Gerar Analisador Sintático");
-	private JButton full = new JButton("Gerar Analisador Léxico e Sintático");
+	private JButton prods = new JButton("Importar ProduÃ§Ãµes para Projeto Atual");
+	private JButton synt = new JButton("Gerar Analisador SintÃ¡tico");
+	private JButton full = new JButton("Gerar Analisador LÃ©xico e SintÃ¡tico");
 	
 	private int result;
 	
 	public BNFImporter() 
 	{
-		super(MainWindow.getInstance(), "Importar Gramática BNF", true);
+		super(MainWindow.getInstance(), "Importar GramÃ¡tica BNF", true);
 		
 		getContentPane().setLayout(new BorderLayout(10, 10));
 		
 		getContentPane().add(
-			new JLabel("<html><center>Arquivo processado com sucesso.<br>O que você deseja fazer?</center></html>", SwingConstants.CENTER),
+			new JLabel("<html><center>Arquivo processado com sucesso.<br>O que vocÃª deseja fazer?</center></html>", SwingConstants.CENTER),
 			BorderLayout.NORTH
 			);
 		

@@ -1,4 +1,4 @@
-package gesser.gals.editor;
+﻿package gesser.gals.editor;
 
 import javax.swing.event.UndoableEditListener;
 import javax.swing.text.*;

@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  * Copyright 2004 Carlos Eduardo Gesser
  * 
  * This program is free software; you can redistribute it and/or modify it
@@ -113,7 +113,7 @@ public class Generator
     			action12(token);
     			break;
     		default:
-    			System.out.println("Ação #"+action+", Token: "+token);
+    			System.out.println("AÃ§Ã£o #"+action+", Token: "+token);
 		}    	
     }
     

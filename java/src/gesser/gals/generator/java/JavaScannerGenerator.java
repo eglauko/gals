@@ -1,4 +1,4 @@
-package gesser.gals.generator.java;
+﻿package gesser.gals.generator.java;
 
 import gesser.gals.generator.Options;
 import gesser.gals.generator.scanner.FiniteAutomata;

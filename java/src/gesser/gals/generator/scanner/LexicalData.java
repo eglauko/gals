@@ -1,4 +1,4 @@
-package gesser.gals.generator.scanner;
+﻿package gesser.gals.generator.scanner;
 
 import gesser.gals.analyser.AnalysisError;
 import gesser.gals.analyser.SemanticError;

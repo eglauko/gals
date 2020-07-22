@@ -1,4 +1,4 @@
-package gesser.gals.generator.parser.ll;
+﻿package gesser.gals.generator.parser.ll;
 
 import gesser.gals.generator.parser.Grammar;
 import gesser.gals.util.IntegerSet;

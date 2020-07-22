@@ -1,4 +1,4 @@
-package gesser.gals.ebnf.parser;
+ï»¿package gesser.gals.ebnf.parser;
 
 import gesser.gals.analyser.AnalysisError;
 import gesser.gals.analyser.SyntaticError;
@@ -92,7 +92,7 @@ public class Parser
         if (p >= 0)
         {
             int[] production = PRODUCTIONS[p];
-            //empilha a produção em ordem reversa
+            //empilha a produÃ§Ã£o em ordem reversa
             for (int i=production.length-1; i>=0; i--)
             {
                 stack.push(new Integer(production[i]));

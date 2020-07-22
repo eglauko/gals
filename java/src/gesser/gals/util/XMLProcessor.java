@@ -1,4 +1,4 @@
-package gesser.gals.util;
+﻿package gesser.gals.util;
 
 import gesser.gals.InputPane;
 import gesser.gals.InputPane.Data;

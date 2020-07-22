@@ -1,4 +1,4 @@
-package gesser.gals.simulator;
+Ôªøpackage gesser.gals.simulator;
 
 import java.util.List;
 import java.util.Stack;
@@ -115,7 +115,7 @@ public class LL1ParserSimulator
 			}
 			else
 			{
-				node.add(new DefaultMutableTreeNode("ERRO SINT¡TICO: Era esperado "+symb[x]));
+				node.add(new DefaultMutableTreeNode("ERRO SINT√ÅTICO: Era esperado "+symb[x]));
 				throw new SyntaticError("Era esperado "+symb[x], currentToken.getPosition());
 			}
 		}
@@ -125,7 +125,7 @@ public class LL1ParserSimulator
 			if (p != -1)
 			{	
 				int[] production = productions[p];
-				//empilha a produÁ„o em ordem reversa
+				//empilha a produ√ß√£o em ordem reversa
 				for (int i=production.length-1; i>=0; i--)
 				{
 					stack.push(Integer.valueOf(production[i]));
@@ -138,7 +138,7 @@ public class LL1ParserSimulator
 			}
 			else
 			{
-				node.add(new DefaultMutableTreeNode("ERRO SINT¡TICO: "+symb[a]+" inesperado"));
+				node.add(new DefaultMutableTreeNode("ERRO SINT√ÅTICO: "+symb[a]+" inesperado"));
 				throw new SyntaticError(symb[a]+" inesperado", currentToken.getPosition());
 			}
 		}
@@ -184,7 +184,7 @@ public class LL1ParserSimulator
 	}
 	
 	/**
-     * @return TRUE se x eh um sÌmbolo terminal
+     * @return TRUE se x eh um s√≠mbolo terminal
      */
     private final boolean isTerminal(int x)
     {
@@ -192,7 +192,7 @@ public class LL1ParserSimulator
     }
 
     /**
-     * @return TRUE se x eh um sÌmbolo n„o terminal
+     * @return TRUE se x eh um s√≠mbolo n√£o terminal
      */
     private final boolean isNonTerminal(int x)
     {
@@ -200,7 +200,7 @@ public class LL1ParserSimulator
     }
     
     /**
-     * @return TRUE se x eh uma AÁ„o Sem‚ntica
+     * @return TRUE se x eh uma A√ß√£o Sem√¢ntica
      */
     private final boolean isSemanticAction(int x)
     {

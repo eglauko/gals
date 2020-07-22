@@ -1,4 +1,4 @@
-package gesser.gals.generator.delphi;
+﻿package gesser.gals.generator.delphi;
 
 import gesser.gals.generator.Options;
 import gesser.gals.generator.scanner.FiniteAutomata;

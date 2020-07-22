@@ -1,4 +1,4 @@
-package gesser.gals.scannerparser;
+Ôªøpackage gesser.gals.scannerparser;
 
 import gesser.gals.analyser.SemanticError;
 import gesser.gals.generator.OptionsDialog;
@@ -40,7 +40,7 @@ public class FiniteAutomataGenerator
 	public void addDefinition(String id, Node root) throws SemanticError
 	{
 		if (definitions.containsKey(id))
-			throw new SemanticError("DefiniÁ„o repetida: "+id);
+			throw new SemanticError("Defini√ß√£o repetida: "+id);
 		
 		definitions.put(id, root);
 		
@@ -56,7 +56,7 @@ public class FiniteAutomataGenerator
 	{
 		/*
 		if (tokenList.contains(id))
-			throw new SemanticError("Token '"+id+"' j· definido");
+			throw new SemanticError("Token '"+id+"' j√° definido");
 		*/	
 		alphabet.addAll(root.getAlphabet());
 		
@@ -112,12 +112,12 @@ public class FiniteAutomataGenerator
 			value = value.toUpperCase();
 			
 		if (!expressions.containsKey(base))
-			throw new SemanticError("Token '"+base+"' n„o definido");
+			throw new SemanticError("Token '"+base+"' n√£o definido");
 			
 		int b = tokenList.indexOf(base)+2;
 		
 		if (tokenList.contains(id))
-			throw new SemanticError("Token '"+id+"' j· definido");
+			throw new SemanticError("Token '"+id+"' j√° definido");
 		
 		Integer i = Integer.valueOf(tokenList.size()+2);
 		
@@ -129,7 +129,7 @@ public class FiniteAutomataGenerator
 			specialCases.put(Integer.valueOf(b), s);
 		}
 		else if (s.get(value) != null)
-			throw new SemanticError("J· houve a definiÁ„o de um caso especial de '"+base+"' com o valor\""+value+"\"");
+			throw new SemanticError("J√° houve a defini√ß√£o de um caso especial de '"+base+"' com o valor\""+value+"\"");
 			
 		s.put(value, i);
 		
@@ -146,7 +146,7 @@ public class FiniteAutomataGenerator
 		Map<Integer, Boolean> back = new TreeMap<Integer, Boolean>();
 		
 		if (root == null)
-			throw new SemanticError("A EspecificaÁ„o LÈxica deve conter a definiÁ„o de pelo menos um Token");
+			throw new SemanticError("A Especifica√ß√£o L√©xica deve conter a defini√ß√£o de pelo menos um Token");
 		
 		computeNext();
 		

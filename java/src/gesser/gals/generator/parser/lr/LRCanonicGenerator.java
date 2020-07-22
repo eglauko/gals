@@ -1,4 +1,4 @@
-
+﻿
 package gesser.gals.generator.parser.lr;
 
 import gesser.gals.generator.parser.Grammar;

@@ -1,4 +1,4 @@
-package gesser.gals.ebnf.parser;
+﻿package gesser.gals.ebnf.parser;
 
 import gesser.gals.ebnf.parser.tokens.TokenId;
 import static gesser.gals.ebnf.parser.tokens.TokenId.*;
@@ -64,7 +64,7 @@ public final class ScannerConstants
 
     public static final String[] SCANNER_ERROR =
     {
-        "Caractere n�o esperado",
+        "Caractere não esperado",
         "",
         "Erro identificando T",
         "Erro identificando SA",

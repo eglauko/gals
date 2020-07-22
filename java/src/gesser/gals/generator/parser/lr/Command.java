@@ -1,4 +1,4 @@
-package gesser.gals.generator.parser.lr;
+﻿package gesser.gals.generator.parser.lr;
 
 import static gesser.gals.generator.parser.lr.Command.Type.*;
 

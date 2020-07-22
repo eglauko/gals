@@ -1,4 +1,4 @@
-package gesser.gals.generator;
+Ôªøpackage gesser.gals.generator;
 
 import javax.swing.*;
 import javax.swing.event.*;
@@ -22,9 +22,9 @@ public class OptionsPane extends JPanel implements ChangeListener
 	private JTextField pkgName = new JTextField("");	
 	private JCheckBox pkg = new JCheckBox("Package / Namespace");
 	
-	private JRadioButton analLex = new JRadioButton("Analisador LÈxico");
-	private JRadioButton analSynt = new JRadioButton("Analisador Sint·tico");
-	private JRadioButton analBoth = new JRadioButton("Analisadores LÈxico e Sint·tico");
+	private JRadioButton analLex = new JRadioButton("Analisador L√©xico");
+	private JRadioButton analSynt = new JRadioButton("Analisador Sint√°tico");
+	private JRadioButton analBoth = new JRadioButton("Analisadores L√©xico e Sint√°tico");
 	
 	private JRadioButton langJava = new JRadioButton("Java");
 	private JRadioButton langCpp = new JRadioButton("C++");
@@ -39,11 +39,11 @@ public class OptionsPane extends JPanel implements ChangeListener
 	private JRadioButton inStream = new JRadioButton("Stream");
 	private JRadioButton inString = new JRadioButton("String");
 	
-	private JCheckBox sensitive = new JCheckBox("<html>Diferenciar mai˙scula/min˙scula<br>em casos especiais</html>", true);
+	private JCheckBox sensitive = new JCheckBox("<html>Diferenciar mai√∫scula/min√∫scula<br>em casos especiais</html>", true);
 	
 	private JRadioButton lexFull   = new JRadioButton("Tabela Completa");
-	private JRadioButton lexCompac = new JRadioButton("Tabela Compactada (SÛ p/ JAVA por enquanto)");
-	private JRadioButton lexHard   = new JRadioButton("EspecÌfica (CÛdigo)");
+	private JRadioButton lexCompac = new JRadioButton("Tabela Compactada (S√≥ p/ JAVA por enquanto)");
+	private JRadioButton lexHard   = new JRadioButton("Espec√≠fica (C√≥digo)");
 
 	private JTextField[] pascalT = {new JTextField("T"), new JTextField("T"), new JTextField("T")};
 	
@@ -60,8 +60,8 @@ public class OptionsPane extends JPanel implements ChangeListener
 		add(tabPane);
 		
 		tabPane.insertTab("Geral", null, general, null, 0);
-		tabPane.insertTab("LÈxico", null, lex, null, 1);
-		tabPane.insertTab("Sint·tico", null, synt, null, 2);
+		tabPane.insertTab("L√©xico", null, lex, null, 1);
+		tabPane.insertTab("Sint√°tico", null, synt, null, 2);
 	}
 	
 	private JPanel createGeneralPanel()
@@ -110,9 +110,9 @@ public class OptionsPane extends JPanel implements ChangeListener
 	{
 		JPanel result = new JPanel(new GridLayout(0, 1));
 		
-		result.add(new JLabel("Analisador LÈxico"));
-		result.add(new JLabel("Analisador Sint·tico"));
-		result.add(new JLabel("Analisador Sem‚ntico"));
+		result.add(new JLabel("Analisador L√©xico"));
+		result.add(new JLabel("Analisador Sint√°tico"));
+		result.add(new JLabel("Analisador Sem√¢ntico"));
 		result.add(pkg);
 		
 		pkg.addChangeListener(this);
@@ -223,7 +223,7 @@ public class OptionsPane extends JPanel implements ChangeListener
 	private JPanel buildParser()
 	{
 		JPanel result = new JPanel(new GridLayout(0, 1));
-		result.setBorder(BorderFactory.createTitledBorder("Classe do Analisador Sint·tico"));
+		result.setBorder(BorderFactory.createTitledBorder("Classe do Analisador Sint√°tico"));
 		
 		result.add(new JLabel("Descendentes"));
 		result.add(parserRD);
@@ -267,7 +267,7 @@ public class OptionsPane extends JPanel implements ChangeListener
 	private JPanel buildLexTable()
 	{
 		JPanel result = new JPanel(new GridLayout(0, 1));
-		result.setBorder(BorderFactory.createTitledBorder("ImplementaÁ„o do AutÙmato"));
+		result.setBorder(BorderFactory.createTitledBorder("Implementa√ß√£o do Aut√¥mato"));
 	
 		result.add(lexFull);
 		result.add(lexCompac);

@@ -1,4 +1,4 @@
-package gesser.gals.generator;
+﻿package gesser.gals.generator;
 
 import java.util.HashMap;
 import java.util.List;

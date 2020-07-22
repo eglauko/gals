@@ -1,4 +1,4 @@
-package gesser.gals.gas;
+﻿package gesser.gals.gas;
 
 import gesser.gals.analyser.AnalysisError;
 import gesser.gals.analyser.SyntaticError;
@@ -72,7 +72,7 @@ public class GASParser implements Constants
                 return true;
 
             case 5:
-                throw new SyntaticError("Erro sint�tico", currentToken.getPosition());
+                throw new SyntaticError("Erro sintático", currentToken.getPosition());
         }
         return false;
     }

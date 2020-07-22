@@ -1,10 +1,10 @@
-package gesser.gals.generator.parser;
+ï»¿package gesser.gals.generator.parser;
 
 import gesser.gals.util.IntList;
 
 /**
- * Uma produção de uma gramática
- * Esta produçao é da forma A -> X1 X2 X3 ... Xn
+ * Uma produÃ§Ã£o de uma gramÃ¡tica
+ * Esta produÃ§ao Ã© da forma A -> X1 X2 X3 ... Xn
  *
  * @author Carlos Eduardo Gesser
  */
@@ -12,12 +12,12 @@ import gesser.gals.util.IntList;
 public class Production implements Comparable
 {
     /**
-     * Lado esquerdo da produçao
+     * Lado esquerdo da produÃ§ao
      */
     private int lhs;
 
     /**
-     * Lado direito da produção
+     * Lado direito da produÃ§Ã£o
      */
     private IntList rhs;
     
@@ -124,7 +124,7 @@ public class Production implements Comparable
 	                }
 	            }
         }
-        // Se ficou tudo igual até agora, a maior é a que ainda tem coisa;
+        // Se ficou tudo igual atÃ© agora, a maior Ã© a que ainda tem coisa;
         return p.rhs.size() - rhs.size();
     }
 }

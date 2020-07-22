@@ -1,4 +1,4 @@
-package gesser.gals.simulator;
+ï»¿package gesser.gals.simulator;
 
 import gesser.gals.GALS;
 import gesser.gals.MainWindow;
@@ -36,7 +36,7 @@ import javax.swing.tree.DefaultTreeModel;
 public class SimulateWindow extends JDialog implements ActionListener
 {
 	private JButton lex = new JButton("Simular Lexico");
-	private JButton synt = new JButton("Simular Sintático");
+	private JButton synt = new JButton("Simular SintÃ¡tico");
 	private JButton close = new JButton("Fechar");
 	
 	private JTextArea ta = new JTextArea();
@@ -219,7 +219,7 @@ public class SimulateWindow extends JDialog implements ActionListener
 		{
 			Token dummy = new Token(-1, e.getMessage(), e.getPosition());
 		
-			tokensModel.add(dummy, "ERRO LÉXICO");
+			tokensModel.add(dummy, "ERRO LÃ‰XICO");
 			e.printStackTrace();
 		}
 	}
@@ -228,7 +228,7 @@ public class SimulateWindow extends JDialog implements ActionListener
 	{
 		split.setRightComponent(treePanel);	
 
-		DefaultMutableTreeNode root = new DefaultMutableTreeNode("Derivação");
+		DefaultMutableTreeNode root = new DefaultMutableTreeNode("DerivaÃ§Ã£o");
 		tokensTree.setModel(new DefaultTreeModel(root));
 		validate();
 
@@ -336,7 +336,7 @@ class TokenTableModel extends AbstractTableModel
 			case 1:
 				return "Lexema";
 			case 2:
-				return "Posição";
+				return "PosiÃ§Ã£o";
 			default:
 				return null;
 		}

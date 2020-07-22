@@ -1,4 +1,4 @@
-package gesser.gals.gas;
+Ôªøpackage gesser.gals.gas;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -63,7 +63,7 @@ public class GASTranslator implements Constants
 		String nt = translateNT(token.getLexeme());
 		
 		if (nonTerminals.contains(nt))
-			throw new SemanticError("SÌmbolo n„o-terminal "+nt+" j· declarado", token.getPosition());
+			throw new SemanticError("S√≠mbolo n√£o-terminal "+nt+" j√° declarado", token.getPosition());
 			
 		nonTerminals.add(nt);
 	}
@@ -75,7 +75,7 @@ public class GASTranslator implements Constants
 		String t = translateToken(token.getLexeme());
 
 		if (terminals.contains(t))
-			throw new SemanticError("SÌmbolo terminal "+t+" j· declarado", token.getPosition());
+			throw new SemanticError("S√≠mbolo terminal "+t+" j√° declarado", token.getPosition());
 		
 		terminals.add(t);
 	}
@@ -84,7 +84,7 @@ public class GASTranslator implements Constants
 	{
 		//#4 - seta o simbolo inicial
 		
-		symbols.put("Ó", Integer.valueOf(0));
+		symbols.put("√Æ", Integer.valueOf(0));
 		symbols.put("$", Integer.valueOf(1));
 		
 		int value = 2;
@@ -101,47 +101,47 @@ public class GASTranslator implements Constants
 		
 		Integer itg = symbols.get(translateNT(token.getLexeme()));
 		if (itg == null)
-			throw new SemanticError("SÌmbolo "+token.getLexeme()+" n„o declarado", token.getPosition());
+			throw new SemanticError("S√≠mbolo "+token.getLexeme()+" n√£o declarado", token.getPosition());
 		 
 		start = itg.intValue();
 		
 		if (start < 2+terminals.size())
-			throw new SemanticError("SÌmbolo inicial deve ser um sÌmbolo n„o terminal", token.getPosition());
+			throw new SemanticError("S√≠mbolo inicial deve ser um s√≠mbolo n√£o terminal", token.getPosition());
 	}
 	
 	private void action5() throws SemanticError
 	{
-		//#5 - cria uma produÁao, e seta o lado esquerdo
+		//#5 - cria uma produ√ßao, e seta o lado esquerdo
 		
 		Integer itg = symbols.get(translateNT(token.getLexeme()));
 		if (itg == null)
-			throw new SemanticError("SÌmbolo "+token.getLexeme()+" n„o declarado", token.getPosition());
+			throw new SemanticError("S√≠mbolo "+token.getLexeme()+" n√£o declarado", token.getPosition());
  
 		lhs = itg.intValue();
 
 		if (lhs < 2+terminals.size())
-			throw new SemanticError("SÌmbolo ao lado esquerdo de uma produÁ„o deve ser um sÌmbolo n„o terminal", token.getPosition());
+			throw new SemanticError("S√≠mbolo ao lado esquerdo de uma produ√ß√£o deve ser um s√≠mbolo n√£o terminal", token.getPosition());
 		
 		rhs = new IntList();
 	}
 	
 	private void action6()
 	{
-		//#6 - termina a produÁao e adiciona
+		//#6 - termina a produ√ßao e adiciona
 		
 		prodList.add(new Production(null, lhs, rhs));
 	}
 	
 	private void action7()
 	{
-		//#7 - cria uma produÁao e seta o lado esquerdo = ao da ultima produÁao
+		//#7 - cria uma produ√ßao e seta o lado esquerdo = ao da ultima produ√ßao
 		
 		rhs = new IntList();
 	}
 		
 	private void action8()
 	{
-		//#8 - adiciona uma aÁao semantica ‡ produÁao
+		//#8 - adiciona uma a√ßao semantica √† produ√ßao
 		
 		String action = token.getLexeme();
 		
@@ -152,22 +152,22 @@ public class GASTranslator implements Constants
 	
 	private void action9() throws SemanticError
 	{
-		//#9 - adiciona um NT ‡ produÁao
+		//#9 - adiciona um NT √† produ√ßao
 		
 		Integer itg = symbols.get(translateNT(token.getLexeme()));
 		if (itg == null)
-			throw new SemanticError("SÌmbolo "+token.getLexeme()+" n„o declarado", token.getPosition());
+			throw new SemanticError("S√≠mbolo "+token.getLexeme()+" n√£o declarado", token.getPosition());
  
 		rhs.add(itg.intValue());
 	}
 	
 	private void action10() throws SemanticError
 	{
-		//#10- adiciona um T ‡ produÁao
+		//#10- adiciona um T √† produ√ßao
 		
 		Integer itg = symbols.get(translateToken(token.getLexeme()));
 		if (itg == null)
-			throw new SemanticError("SÌmbolo "+token.getLexeme()+" n„o declarado", token.getPosition());
+			throw new SemanticError("S√≠mbolo "+token.getLexeme()+" n√£o declarado", token.getPosition());
  
 		rhs.add(itg.intValue());
 	}

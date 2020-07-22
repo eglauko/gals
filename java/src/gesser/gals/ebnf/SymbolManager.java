@@ -1,4 +1,4 @@
-/*
+Ôªø/*
  * Copyright 2004 Carlos Eduardo Gesser
  * 
  * This program is free software; you can redistribute it and/or modify it
@@ -42,7 +42,7 @@ public class SymbolManager
 	
 	private NonTerminal firstNonTerminal = null;
 	
-	public static final Terminal EPSILON = new Terminal("Ó", 0);
+	public static final Terminal EPSILON = new Terminal("√Æ", 0);
 	public static final Terminal DOLLAR = new Terminal("$", 1);
 	
 	public SymbolManager()
@@ -58,7 +58,7 @@ public class SymbolManager
 	public void bind(Symbol s, SymbolToken token)
 	{
 		if (! symbols.containsKey(s.getLexeme()))
-			throw new NoSuchElementException(s + " n„o declarado");
+			throw new NoSuchElementException(s + " n√£o declarado");
 		
 		//tokenToSymbol.put(token, s);
 		Set<SymbolToken> tokens = symbolToTokens.get(s);

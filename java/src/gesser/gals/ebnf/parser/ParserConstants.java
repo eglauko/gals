@@ -1,4 +1,4 @@
-package gesser.gals.ebnf.parser;
+﻿package gesser.gals.ebnf.parser;
 
 public interface ParserConstants
 {
@@ -65,16 +65,16 @@ public interface ParserConstants
         "Era esperado EPSILON",
         "Era esperado WS",
         "Era esperado COMMENT",
-        "A gram�tica deve conter ao menos uma produ��o", //"<G> inv�lido",
-        "Gram�tica inv�lida", //"<G_> inv�lido",
-        "Produ��o inv�lida",//"<P> inv�lido",
-        "Era esperado um s�mbolo, a��o sem�ntica, ou grupo",//"<PLIST> inv�lido",
-        "Era esperado ; ou |", //"<PLIST_REP> inv�lido",
-        "Era esperado um s�mbolo, a��o sem�ntica, ou grupo", //"<RHS> inv�lido",
-        "Era esperado um s�mbolo, a��o sem�ntica, ou grupo",//"<RHS_REP> inv�lido",
-        "Item inv�lido",//"<ITEM> inv�lido",
-        "S�mbolo/A��o Sem�ntica inv�lido",//"<S> inv�lido",
-        "Era esperado o indicador de cardinalidade, ou outro s�mbolo, a��o sem�ntica, ou grupo",//"<CARD> inv�lido",
-        "Grupo inv�lido"//"<X> inv�lido"
+        "A gramática deve conter ao menos uma produção", //"<G> inválido",
+        "Gramática inválida", //"<G_> inválido",
+        "Produção inválida",//"<P> inválido",
+        "Era esperado um símbolo, ação semântica, ou grupo",//"<PLIST> inválido",
+        "Era esperado ; ou |", //"<PLIST_REP> inválido",
+        "Era esperado um símbolo, ação semântica, ou grupo", //"<RHS> inválido",
+        "Era esperado um símbolo, ação semântica, ou grupo",//"<RHS_REP> inválido",
+        "Item inválido",//"<ITEM> inválido",
+        "Símbolo/Ação Semântica inválido",//"<S> inválido",
+        "Era esperado o indicador de cardinalidade, ou outro símbolo, ação semântica, ou grupo",//"<CARD> inválido",
+        "Grupo inválido"//"<X> inválido"
     };
 }

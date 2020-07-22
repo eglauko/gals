@@ -1,4 +1,4 @@
-package gesser.gals.generator;
+﻿package gesser.gals.generator;
 
 import gesser.gals.util.XMLParsingException;
 

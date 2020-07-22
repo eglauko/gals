@@ -1,4 +1,4 @@
-package gesser.gals.generator.cpp;
+﻿package gesser.gals.generator.cpp;
 
 import java.util.List;
 import java.util.Arrays;
@@ -739,7 +739,7 @@ public class CppCommomGenerator
 		}
 		
 		for (int i=g.FIRST_NON_TERMINAL; i< symbs.length; i++)
-			result.append("    \""+symbs[i]+" inv�lido\",\n");
+			result.append("    \""+symbs[i]+" inválido\",\n");
 			
 		result.setLength(result.length()-2);
 		result.append(

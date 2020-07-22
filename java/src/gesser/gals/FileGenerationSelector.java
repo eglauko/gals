@@ -1,4 +1,4 @@
-package gesser.gals;
+﻿package gesser.gals;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -42,7 +42,7 @@ public class FileGenerationSelector extends JDialog implements ActionListener
 		cp.setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
 		cp.setLayout(new BorderLayout(5, 5));
 		
-		cp.add(new JLabel("<html>Selecione os arquivos que devem ser gerados<br>(Arquivos existentes ser�o sobrescritos)</html>"), BorderLayout.NORTH);
+		cp.add(new JLabel("<html>Selecione os arquivos que devem ser gerados<br>(Arquivos existentes serão sobrescritos)</html>"), BorderLayout.NORTH);
 		
 		JPanel tmp = new JPanel(new BorderLayout());
 		tmp.setBorder(BorderFactory.createLoweredBevelBorder());

@@ -1,4 +1,4 @@
-package gesser.gals.generator.parser.lr;
+﻿package gesser.gals.generator.parser.lr;
 
 import gesser.gals.generator.OptionsDialog;
 import gesser.gals.generator.parser.Grammar;

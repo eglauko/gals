@@ -1,4 +1,4 @@
-package gesser.gals.generator.cpp;
+﻿package gesser.gals.generator.cpp;
 
 import gesser.gals.generator.Options;
 import gesser.gals.generator.scanner.FiniteAutomata;

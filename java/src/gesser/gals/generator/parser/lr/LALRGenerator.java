@@ -1,4 +1,4 @@
-package gesser.gals.generator.parser.lr;
+﻿package gesser.gals.generator.parser.lr;
 
 import java.util.List;
 import java.util.Set;

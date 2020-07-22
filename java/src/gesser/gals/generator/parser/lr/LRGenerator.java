@@ -1,4 +1,4 @@
-package gesser.gals.generator.parser.lr;
+Ôªøpackage gesser.gals.generator.parser.lr;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +49,7 @@ public abstract class LRGenerator
 			for (Integer i : bs)
 			{
 				if (i.intValue() == 1)//DOLAR
-					bfr.append("fim de sentenÁa");
+					bfr.append("fim de senten√ßa");
 				else
 					bfr.append(g.getSymbols()[i.intValue()]);
 		
@@ -168,7 +168,7 @@ public abstract class LRGenerator
 	
 		result.append("<TR>");
 		result.append("<TD  align=center rowspan=2 bgcolor=black nowrap><FONT color=white><B>ESTADO</B></FONT></TD>");
-		result.append("<TD  align=center colspan="+(g.FIRST_NON_TERMINAL-1)+" bgcolor=black nowrap><FONT color=white><B>A«√O</B></FONT></TD>");
+		result.append("<TD  align=center colspan="+(g.FIRST_NON_TERMINAL-1)+" bgcolor=black nowrap><FONT color=white><B>A√á√ÉO</B></FONT></TD>");
 		result.append("<TD  align=center colspan="+(g.FIRST_SEMANTIC_ACTION()-g.FIRST_NON_TERMINAL)+" bgcolor=black nowrap><FONT color=white><B>DESVIO</B></FONT></TD>");
 		result.append("</TR>");
 	

@@ -1,4 +1,4 @@
-package gesser.gals.scannerparser;
+Ôªøpackage gesser.gals.scannerparser;
 
 import java.util.Stack;
 
@@ -130,7 +130,7 @@ public class SemanticAnalyser
     {
 		Node def = gen.getDefinition(token.getLexeme());
 		if (def == null)
-			throw new RuntimeException(new SemanticError("DefiniÁ„o n„o declarada: "+token.getLexeme(), token.getPosition()));
+			throw new RuntimeException(new SemanticError("Defini√ß√£o n√£o declarada: "+token.getLexeme(), token.getPosition()));
 	
 		fator.push( (Node) def.clone() );
     }
@@ -164,7 +164,7 @@ public class SemanticAnalyser
 		char c2 = (char) n2.alphabet.first();
 		
 		if (c1 >= c2)
-			throw new RuntimeException(new SemanticError("Intervalo inv·lido", token.getPosition()));
+			throw new RuntimeException(new SemanticError("Intervalo inv√°lido", token.getPosition()));
 			
     	fator.push( Node.createIntervalNode( c1, c2) );
     }

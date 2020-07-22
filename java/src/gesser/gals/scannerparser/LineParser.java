@@ -1,4 +1,4 @@
-package gesser.gals.scannerparser;
+Ôªøpackage gesser.gals.scannerparser;
 
 import java.util.StringTokenizer;
 
@@ -86,7 +86,7 @@ public class LineParser
 							}	
 						}
 						else
-							throw new SyntaticError("Era esperado uma Express„o Regular", pos);
+							throw new SyntaticError("Era esperado uma Express√£o Regular", pos);
 					}
 					else
 						throw new SyntaticError("Era esperado ':'", pos);
@@ -172,7 +172,7 @@ public class LineParser
 			}	
 		}
 		else
-			throw new SyntaticError("Era esperado uma Express„o Regular", pos);
+			throw new SyntaticError("Era esperado uma Express√£o Regular", pos);
 	}
 
 	private void parseId(Token t) throws AnalysisError
@@ -217,7 +217,7 @@ public class LineParser
 		Token t = nextToken();
 		
 		if (t == null || t.getId() != LineScanner.RE)
-			throw new SyntaticError("Era esperado uma Express„o Regular", pos);
+			throw new SyntaticError("Era esperado uma Express√£o Regular", pos);
 		
 		String re = t.getLexeme();
 		
@@ -265,10 +265,10 @@ public class LineParser
 					
 					t = nextToken();
 					if (t != null)
-						throw new SyntaticError("SÛ È permitido uma definiÁ„o por linha", t.getPosition());
+						throw new SyntaticError("S√≥ √© permitido uma defini√ß√£o por linha", t.getPosition());
 				}
 				else
-					throw new SyntaticError("Era esperado uma Express„o Regular", pos);
+					throw new SyntaticError("Era esperado uma Express√£o Regular", pos);
 			}
 			else
 				throw new SyntaticError("Era esperado ':'", pos);
@@ -286,7 +286,7 @@ public class LineParser
 			if (t.getId() == LineScanner.COMMENT)
 				t = nextToken();
 			else if (t.getId() == LineScanner.ERROR)
-				throw new LexicalError("Token inv·lido", t.getPosition());
+				throw new LexicalError("Token inv√°lido", t.getPosition());
 		}
 		
 		return t;

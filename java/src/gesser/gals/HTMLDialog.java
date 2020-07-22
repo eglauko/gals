@@ -1,4 +1,4 @@
-package gesser.gals;
+﻿package gesser.gals;
 
 import java.awt.BorderLayout;
 import java.awt.event.*;

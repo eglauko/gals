@@ -1,4 +1,4 @@
-package gesser.gals.generator.java;
+﻿package gesser.gals.generator.java;
 
 import gesser.gals.generator.Options;
 import gesser.gals.generator.parser.Grammar;
@@ -841,7 +841,7 @@ public class JavaCommonGenerator
 		}
 					
 		for (int i=g.FIRST_NON_TERMINAL; i< symbs.length; i++)
-			result.append("        \""+symbs[i]+" inv�lido\",\n");
+			result.append("        \""+symbs[i]+" inválido\",\n");
 			
 		result.setLength(result.length()-2);
 		result.append(

@@ -1,4 +1,4 @@
-package gesser.gals.ebnf.parser;
+﻿package gesser.gals.ebnf.parser;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

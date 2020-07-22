@@ -1,4 +1,4 @@
-package gesser.gals.gas;
+Ôªøpackage gesser.gals.gas;
 
 import gesser.gals.GALS;
 import gesser.gals.MainWindow;
@@ -35,7 +35,7 @@ public class KeyWordsSelector extends JDialog implements ChangeListener, ActionL
 	
 	private KeyWordsSelector()
 	{
-		super(MainWindow.getInstance(), "SeleÁ„o de Palavras-Chave", true);
+		super(MainWindow.getInstance(), "Sele√ß√£o de Palavras-Chave", true);
 		
 		getContentPane().setLayout(new GridLayout(1, 2, 5, 5));
 		
@@ -57,7 +57,7 @@ public class KeyWordsSelector extends JDialog implements ChangeListener, ActionL
 		
 		constr.gridy = 0;
 		constr.anchor = GridBagConstraints.NORTH;
-		left.add(new JLabel("<html>Selecione os Tokens que s„o palavras-chave</html>"), constr);
+		left.add(new JLabel("<html>Selecione os Tokens que s√£o palavras-chave</html>"), constr);
 		
 		constr.gridy = 1;
 		constr.anchor = GridBagConstraints.SOUTH;
@@ -130,7 +130,7 @@ public class KeyWordsSelector extends JDialog implements ChangeListener, ActionL
 		{
 			if (!checkBoxes[i].isSelected())
 			{
-				bfr.append(checkBoxes[i].getText()).append(" : //inserir Express„o Regular\n");			
+				bfr.append(checkBoxes[i].getText()).append(" : //inserir Express√£o Regular\n");			
 			}
 		}
 
